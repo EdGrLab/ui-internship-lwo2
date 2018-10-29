@@ -1,7 +1,7 @@
 export function convertToRoman(num) {
-  let arr1 = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000].reverse();
-  let arr2 = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L',
-    'XC', 'C', 'CD', 'D', 'CM', 'M'].reverse();
+  let arr1 = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  let arr2 = [
+    'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
   let roman = [];
   for (let i=0; i<=arr1.length; i++) {
     while (arr1[i]<=num) {
