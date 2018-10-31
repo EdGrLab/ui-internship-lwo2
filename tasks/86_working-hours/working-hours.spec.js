@@ -1,4 +1,4 @@
-// import { formatWorkingHours } from './working-hours';
+import { formatWorkingHours } from './working-hours';
 
 const INPUT_DATA = [
     {
@@ -45,7 +45,7 @@ const OUTPUT_DATA = [
     'SUN: 11:00 - 23:00'
 ];
 
-xdescribe('working-hours', () => {
+describe('working-hours', () => {
     test(`formatWorkingHours(${INPUT_DATA}) should return an array`, () => {
         expect(Array.isArray(formatWorkingHours(INPUT_DATA))).toBe(true);
     });
