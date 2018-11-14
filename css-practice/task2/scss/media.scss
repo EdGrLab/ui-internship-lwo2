@@ -1,0 +1,160 @@
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .section-4,
+  .founder-container,
+  .section-8 .info,
+  form {
+    flex-direction: column;
+  }
+
+  .info > * {
+    width: 100%;
+  }
+
+  .section-4,
+  .founder-container {
+    width: 100%;
+  }
+
+  header {
+    padding: 0;
+  }
+  .sign {
+    padding: 10px;
+  }
+  .description article {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+  }
+  .bg {
+    display: none;
+  }
+  .features-container {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .feature {
+    width: 80%;
+    margin: 2%;
+  }
+  .bg {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .section-3 {
+    width: 80%;
+  }
+
+  .section-4-container {
+    background-image: none;
+    padding: 10% 0;
+  }
+
+  .section-4 .img-container,
+  .section-4 article {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section-4 img,
+  .section-4 h2 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .section-4 .img-container {
+    margin-bottom: 20px;
+  }
+
+  .section-4 article {
+    padding: 0;
+  }
+
+  .section-4 h2 span {
+    display: none;
+  }
+
+  article {
+    widows: 100%;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+  }
+
+  .founder {
+    padding-top: 5%;
+    width: 90%;
+    margin: auto;
+  }
+  .section-5-container {
+    padding: 50px 0;
+  }
+
+  .section-6 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
+  .section-7 {
+    flex-direction: column;
+  }
+
+  .section-7 form input,
+  .section-7 form button {
+    width: 60%;
+    height: 35px;
+    margin: 0 auto;
+  }
+  .section-8 {
+    display: flex;
+    align-content: center;
+    padding: 2% 10%;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .section-8 p {
+    width: 100%;
+  }
+
+  .email-container {
+    justify-content: center;
+  }
+
+  .section-2 article {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .feature {
+    margin-bottom: 26px;
+    padding: 0 15%;
+  }
+
+  .section-5-container {
+    padding: 50px 0;
+  }
+
+  .founder {
+    padding: 0 5%;
+    margin-bottom: 20px;
+  }
+
+  .section-6 {
+    padding: 0 15%;
+  }
+  .section-6 article {
+    padding: 50px 0 0 0;
+    margin-bottom: 50px;
+  }
+}

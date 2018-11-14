@@ -1,0 +1,16 @@
+{
+  "name": "task2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass -w scss/ -o css/",
+    "compile:sass": "node-sass scss/ -o css/"
+  },
+  "author": "Eduard Hrabchak",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.10.0",
+    "sass": "^1.14.3"
+  }
+}

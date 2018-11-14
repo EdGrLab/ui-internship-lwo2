@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Exo';
+	src: url('Exo-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Exo';
+	src: url('Exo-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Exo';
+	src: url('Exo-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Exo';
+	src: url('Exo-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
