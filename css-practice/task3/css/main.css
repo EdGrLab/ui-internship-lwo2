@@ -1,31 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
-  box-sizing: border-box;
-  border: 0.1px solid red; }
-
-.flx {
-  display: flex; }
-
-h1 {
-  font-size: 145px;
-  line-height: 1;
-  width: 60%;
-  margin: auto;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  padding: 25px 0 50px 0; }
-
-.line {
-  width: 65px;
-  margin: 20px auto;
-  border-bottom: 2px solid #ffffff; }
-
-h2 {
-  font-family: 'Kaushan Script', cursive;
-=======
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -48,13 +23,10 @@ h1 {
 
 h2 {
   font-family: "Kaushan Script", cursive;
->>>>>>> css-task-3
   color: #ffffff;
   letter-spacing: 1.2px;
   font-size: 70px; }
 
-<<<<<<< HEAD
-=======
 h3 {
   font-family: "Montserrat";
   font-size: 30px;
@@ -84,7 +56,6 @@ h5 {
   margin-top: 25px;
   border-bottom: 2px solid #f38181; }
 
->>>>>>> css-task-3
 .welcome-container {
   max-width: 1200px;
   margin: auto; }
@@ -93,21 +64,6 @@ h5 {
   position: relative;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  background: url("../img/eagle.png") center center no-repeat;
-  background-size: cover; }
-  .bg-img:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
-    opacity: 0.1; }
-
-.navbar {
-=======
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.8)), to(rgba(243, 129, 129, 0.8))), url("../img/eagle.png") center center no-repeat;
   background: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%), url("../img/eagle.png") center center no-repeat;
   background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%), url("../img/eagle.png") center center no-repeat;
@@ -125,7 +81,6 @@ h5 {
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> css-task-3
   display: flex; }
 
 .navbar li:first-child {
@@ -137,18 +92,12 @@ h5 {
   margin: 10px 0;
   text-transform: capitalize; }
 
-<<<<<<< HEAD
-.navbar li a {
-  padding: 14px 23px;
-  margin: 20px 0px; }
-=======
 li a {
   padding: 25px 19px;
   margin: 10px 5px; }
 
 .navbar li a:hover {
   border-bottom: 2px solid #fce38a; }
->>>>>>> css-task-3
 
 ul {
   list-style-type: none; }
@@ -158,11 +107,7 @@ ul {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 14px;
-<<<<<<< HEAD
-  font-family: 'Montserrat', sans-serif;
-=======
   font-family: "Montserrat", sans-serif;
->>>>>>> css-task-3
   display: block;
   text-decoration: none; }
 
@@ -170,11 +115,6 @@ ul {
   padding: 0; }
 
 .intro {
-<<<<<<< HEAD
-  justify-content: center;
-  flex-basis: 60%;
-  margin: 12.5% 0;
-=======
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -185,25 +125,16 @@ ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
->>>>>>> css-task-3
   flex-flow: column;
   text-align: center; }
 
 .learn-more {
   font-size: 14px;
-<<<<<<< HEAD
-  padding: 10px 10px;
-=======
   padding: 10px 32px 8px 32px;
->>>>>>> css-task-3
   border: 2px solid #ffffff;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
-<<<<<<< HEAD
-  width: 12%;
-  margin: auto; }
-=======
   margin: 50px auto; }
 
 .learn-more:hover {
@@ -967,4 +898,3 @@ input::placeholder {
   .post-item {
     width: 100%;
     margin: 0 auto; } }
->>>>>>> css-task-3
