@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Goal of the project is to provide the platform to write algorithms, tests and get markup knowledge",
   "scripts": {
-    "test": "jest",
-    "lint": "./node_modules/.bin/eslint tasks/**/*.js",
-    "tdd": "jest --watch"
+    "watch:sass": "node-sass -w css-practice/task3/scss/ -o css-practice/task3/css/",
+    "compile:sass": "node-sass css-practice/task3/scss/ -o css-practice/task3/css/"
   },
   "husky": {
     "hooks": {
@@ -23,5 +22,9 @@
     "husky": "^1.1.2",
     "jest": "^21.1.0",
     "regenerator-runtime": "^0.11.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.10.0",
+    "sass": "^1.14.3"
   }
 }
