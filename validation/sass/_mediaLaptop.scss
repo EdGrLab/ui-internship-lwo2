@@ -1,0 +1,100 @@
+@media only screen and (max-width: 1024px) {
+  /* Header */
+  .top-bar {
+    .flex {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .menu {
+        width: 60%;
+      }
+    }
+  }
+  /* Info Section */
+  .info-section {
+    .info-section-container {
+      .info-text-items {
+        width: 44%;
+        p {
+          margin-bottom: 13px;
+        }
+        h2 {
+          color: #000000;
+          margin-bottom: 21px;
+        }
+      }
+    }
+  }
+
+  /* Sub List Section */
+  .sub-list-section {
+    .sub-list-container {
+      display: flex;  
+      justify-content: space-between;
+      align-items: flex-start;
+      .sub-list-section-text {
+        width: 50%;
+        }
+      }
+    img {
+        box-shadow: 0px 35px 115px 12px rgba(204,204,204,0.84);
+    }
+  }
+  
+  /* Why this is awesome */
+  .awesome {
+    &-container {
+      .awesome-title {
+        h2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  /* Pricing Options */
+  .pricing {
+    &-container {
+      .pricing-title {
+        h2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  /* Customers */
+  .customer {
+    &-container {
+      .customer-title {
+        h2 { 
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  /* Stylish Design */
+
+  .design {
+    &-container{
+      .design-title {
+        h2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  /* Contact Us */
+  .contact {
+    &-container {
+      .contact-title {
+        h2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  
+}

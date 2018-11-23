@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>AxIt</title>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="container flex">
+        <div class="logo">
+          <a href="#"><img src="img/Logo.png" alt=""/></a>
+        </div>
+        <a href="#" class="menu-btn">
+          <span></span> <span></span> <span></span>
+        </a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="burger-menu d-none">
+      <div class="container container-burger">
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <div class="banner-text">
+          <div class="banner-text-items">
+            <img src="img/Logo_big.png" alt="" />
+            <h2>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+            <div class="devider"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo.
+            </p>
+            <button class="btn" type="button"><a href="#">Download</a></button>
+          </div>
+          <form name="login" action="test.php" method="POST">
+            <div class="title">
+              <label>Try Your <span>FREE</span> Trial Today</label>
+            </div>
+            <p id="tip">Please fill in data correctly!</p>
+            <div class="input_name">
+              <input
+                required
+                type="text"
+                id="username"
+                onblur="validate('username', /^[a-zA-Z ]+$/)"
+                name="user_name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="input_mail">
+              <input
+                required
+                type="email"
+                id="email"
+                onblur="validate('email', /\S+@\S+\.\S+/)"
+                name="user_mail"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input_psw">
+              <input
+                required
+                type="password"
+                id="password"
+                onblur="validate('password', /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&+-]).{6,20}/)"
+                name="user_password"
+                placeholder="Password"
+              />
+            </div>
+            <button class="btn-form" type="submit">
+              <a href="#">Get Started</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="social">
+      <div class="container flex-social">
+        <div class="social-text">
+          <h2>Social Media</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet.
+          </p>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="facebook"></a> <a href="#" class="twitter"></a>
+          <a href="#" class="google"></a> <a href="#" class="pint"></a>
+          <a href="#" class="inst"></a> <a href="#" class="dub"></a>
+          <a href="#" class="wifi"></a>
+        </div>
+      </div>
+    </div>
+    <div class="info-section">
+      <div class="container info-section-container">
+        <div class="info-button">
+          <button
+            class="btn-info"
+            id="defaultTab"
+            onclick="switchTab(event,'tab1')"
+          >
+            <a href="">Tab 1</a>
+          </button>
+          <button class="btn-info" onclick="switchTab(event,'tab2')">
+            <a href="">Tab 2</a>
+          </button>
+          <button class="btn-info" onclick="switchTab(event,'tab3')">
+            <a href="">Tab 3</a>
+          </button>
+        </div>
+        <div class="info-text-items" id="tab1">
+          <h2>Tabs with soft transitioning effect.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+            Cum sociis natoque penatibus et magnis dis parturient montes. <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet.
+          </p>
+          <button class="btn-info-text" type="button">
+            <a href="">Download</a>
+          </button>
+        </div>
+        <div class="info-text-items" id="tab2">
+          <h2>Other tab content.</h2>
+          <p>
+            Proin sodales pulvinar tempor. Cum sociis natoque penatibus et
+            magnis dis parturient montes. <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet.
+          </p>
+          <button class="btn-info-text" type="button">
+            <a href="">Download</a>
+          </button>
+        </div>
+        <div class="info-text-items" id="tab3">
+          <h2>Another tab content.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. <br />
+            <br />
+            Is math related to science?
+          </p>
+          <button class="btn-info-text" type="button">
+            <a href="">Download</a>
+          </button>
+        </div>
+        <img src="./img/image_right_u255.png" alt="" />
+      </div>
+    </div>
+    <div class="sub-list-section">
+      <div class="container sub-list-container">
+        <img src="./img/img_left.png" alt="" />
+        <div class="sub-list-section-text">
+          <h2>Sub list section</h2>
+          <div class="devider"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo.
+          </p>
+          <div class="sub-list-section-text-title">
+            <div class="img-border">
+              <img src="./img/cloud_upload.png" alt="" />
+            </div>
+            <div class="text-title">
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet.
+              </p>
+            </div>
+          </div>
+          <div class="sub-list-section-text-title">
+            <div class="img-border">
+              <img src="./img/cloud_load.png" alt="" />
+            </div>
+            <div class="text-title">
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra justo commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="picture-section">
+      <div class="container picture-section-container">
+        <div class="picture-section-text">
+          <h2>Standard Picture Section</h2>
+          <div class="devider"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+            Cum sociis natoque penatibus et magnis dis parturient montes. <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet.
+          </p>
+        </div>
+        <img src="./img/img_right.png" alt="" />
+      </div>
+    </div>
+    <div class="awesome">
+      <div class="container awesome-container">
+        <div class="awesome-title">
+          <h2>WHY THIS IS AWESOME</h2>
+          <div class="devider"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="awesome-img">
+          <div class="awesome-img-wraper">
+            <div class="img-border">
+              <img src="./img/lightbul.png" alt="" />
+            </div>
+            <h2>Thoughtful Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="awesome-img-wraper">
+            <div class="img-border">
+              <img src="./img/keyboard.png" alt="" />
+            </div>
+            <h2>Well Crafted</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="awesome-img-wraper">
+            <div class="img-border">
+              <img src="./img/lightning.png" alt="" />
+            </div>
+            <h2>Easy to Customize</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing">
+      <div class="container pricing-container">
+        <div class="pricing-title">
+          <h2>PRICING OPTIONS</h2>
+          <div class="devider"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="pricing-wraper">
+          <div class="pricing-wrap">
+            <a href="">
+              <div class="pricing-wrap-header">
+                <h2>Basic</h2>
+                <p class="prize"><span>$</span>0</p>
+                <p class="text">Free for Life</p>
+                <p class="popular"></p>
+              </div>
+            </a>
+            <div class="pricing-ability">
+              <ul>
+                <a href="#"> <li>1 gb of space</li> </a>
+                <a href="#"> <li>10 gb of bandwidth</li> </a>
+                <a href="#"> <li>3 websites</li> </a>
+                <a href="#"> <li>Basic Customization</li> </a>
+                <a href="#"> <li>wordpress integration</li> </a>
+                <a href="#"> <li>email support</li> </a>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing-wrap">
+            <a href="#">
+              <div class="pricing-wrap-header">
+                <h2>Professional</h2>
+                <p class="prize"><span>$</span>19</p>
+                <p class="text">Monthly Payment</p>
+                <p class="popular current">Our Most Popular</p>
+              </div>
+            </a>
+            <div class="pricing-ability">
+              <ul>
+                <a href="#"> <li>5 gb of space</li> </a>
+                <a href="#"> <li>50 gb of bandwidth</li> </a>
+                <a href="#"> <li>12 websites</li> </a>
+                <a href="#"> <li>Advanced Customization</li> </a>
+                <a href="#"> <li>wordpress integration</li> </a>
+                <a href="#"> <li>email support</li> </a>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing-wrap">
+            <a href="#">
+              <div class="pricing-wrap-header">
+                <h2>Enterprise</h2>
+                <p class="prize"><span>$</span>70</p>
+                <p class="text">Monthly Payment</p>
+                <p class="popular"></p>
+              </div>
+            </a>
+            <div class="pricing-ability">
+              <ul>
+                <a href="#"> <li>Unlimited space</li> </a>
+                <a href="#"> <li>unlimited bandwidth</li> </a>
+                <a href="#"> <li>100 websites</li> </a>
+                <a href="#"> <li>Advanced Customization</li> </a>
+                <a href="#"> <li>wordpress integration</li> </a>
+                <a href="#"> <li>24/7 customer support</li> </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="customer">
+      <div class="container customer-container">
+        <div class="customer-title">
+          <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+          <div class="devider"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="customer-wraper">
+          <div class="wrap">
+            <div class="customer-feedback">
+              <p>
+                Lorem ipsum dolor sit amet,consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+            <div class="customer-icon">
+              <img src="./img/avatar_2_u231.png" alt="" />
+              <div class="name">
+                <h2>Jeremy H.</h2>
+                <span>Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="customer-feedback">
+              <p>
+                Lorem ipsum dolor sit amet,consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+            <div class="customer-icon">
+              <img src="./img/avatar_2_u231.png" alt="" />
+              <div class="name">
+                <h2>John S.</h2>
+                <span>Freelancer</span>
+              </div>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="customer-feedback">
+              <p>
+                Lorem ipsum dolor sit amet,consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </p>
+            </div>
+            <div class="customer-icon">
+              <img src="./img/avatar_2_u231.png" alt="" />
+              <div class="name">
+                <h2>Susan W.</h2>
+                <span>Photographer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="design">
+      <div class="container design-container">
+        <div class="design-title">
+          <h2>STYLISH AXURE DESIGN</h2>
+          <div class="devider"></div>
+          <p>
+            Use the sections you need, remove the ones you don't. Create
+            gorgeous prototypes faster than ever!
+          </p>
+        </div>
+        <button class="btn-design" type="button">
+          <a href="">Download</a>
+        </button>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="container contact-container">
+        <div class="contact-title">
+          <h2>CONTACT US</h2>
+          <div class="devider"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="contact-form">
+          <form action="send.php" method="POST">
+            <div class="input_name">
+              <input
+                type="text"
+                required
+                id="username2"
+                onblur="validate('username2', /^[a-zA-Z ]+$/)"
+                name="user_name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="input_mail">
+              <input
+                type="email"
+                required
+                id="email2"
+                onblur="validate('email2', /\S+@\S+\.\S+/)"
+                name="user_mail"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input_name">
+              <input
+                type="text"
+                id="subj"
+                onblur="validate('subj', /^[a-zA-Z ]+$/)"
+                name="user_subj"
+                placeholder="Subject"
+              />
+            </div>
+          </form>
+          <textarea
+            name="Message"
+            id="msg-area"
+            onblur="validate('msg-area', /^[a-zA-Z0-9._\s]{1,255}$/)"
+            placeholder="Message"
+          >
+          </textarea>
+        </div>
+        <button class="btn-contact" type="submit">Send Message</button>
+      </div>
+    </div>
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-social-icons">
+          <a href="#" class="facebook"></a> <a href="#" class="twitter"></a>
+          <a href="#" class="google"></a> <a href="#" class="pint"></a>
+          <a href="#" class="inst"></a> <a href="#" class="dub"></a>
+          <a href="#" class="wifi"></a>
+        </div>
+        <p>© 2018 Axure Themes</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

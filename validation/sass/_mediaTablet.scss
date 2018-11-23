@@ -1,0 +1,389 @@
+@media only screen and (max-width: 768px) {
+  /* Header */
+
+  .top-bar {
+    .flex {
+      .menu-btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: $colorBlack;
+        border-radius: 50%;
+        position: relative;
+        span {
+          width: 20px;
+          margin-left: 15px;
+          height: 2px;
+          background-color: $colorOrange;
+          display: block;
+          margin-bottom: 5px;
+        }
+        :first-child {
+          margin-top: 16px;
+        }
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+  .burger-menu {
+    background-color: rgba(0,0,0, 0.7);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    .container-burger {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .menu {
+        width: 100%;
+        ul {
+          display: flex;
+          flex-direction: column;
+          flex-basis: 100%;
+          justify-content: space-between;
+          li{
+            list-style-type: none;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid $colorOrange;
+            a {
+              color: $colorWhite;
+              font-family: $fontOpenSans;
+              font-size: 16px;
+              text-decoration: none;
+              text-align: center;
+              display: block;
+            }
+          }
+          :last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  /* Banner */
+  .banner {
+    background: url(../img/main_banner.png) no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      &-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        img {
+          margin-bottom: 10px; 
+        }
+        h2 {
+          color: $colorWhite;
+          font-family: $fontRaleway;
+          font-size: 36px;
+          text-transform: uppercase;
+          margin-bottom: 33px;
+          text-align: center;
+        }
+        .devider {
+          width: 65px;
+          border: 1px solid #ffffff;
+          margin-bottom: 36px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      .title {
+        display: none;
+      }
+      .input_name, .input_mail, .input_psw {
+        display: none;
+      }
+      .input_psw {
+        display: none;
+      }
+      .btn-form {
+        display: none;
+      }
+    }
+  }
+
+  .error {
+    border:2px solid red;
+}
+
+.success {
+  border:2px solid green;
+}
+
+  /* Social */
+  .social {
+    display: none;
+  }
+  /* Info Section */
+  .info-section {
+    .info-section-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .info-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        width: 60%;
+        .btn-info {
+          border-radius: 3px;
+        }
+      }
+      img {
+        width: 60%;
+        margin-top: 25px;
+      }
+      .info-text-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        h2 {
+          font-size: 40px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 60px
+        }
+      }
+    }
+  }
+
+  /* Sub List Section */
+
+  .sub-list-section {
+    .sub-list-container {
+      display: flex;  
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px; 
+      .sub-list-section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        h2 {
+          color: #212121;
+          font-family: $fontOpenSans;
+          font-size: 30px;
+          margin-bottom: 25px;
+          margin-top: 40px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        .sub-list-section-text-title {
+          display: flex;
+          align-items: center;
+          width: 40%;
+          .img-border {  
+            border: 1px solid $colorOrange;
+            border-radius: 100%;
+            width: 1px;
+            height: 1px;
+            padding: 20px 20px;
+            position: relative;
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }  
+          .text-title {
+            width: 90%;
+            margin-left: 25px;
+            h2 {
+              text-align: center;
+              font-size: 20px;
+              
+            }
+          }
+        }
+      }
+      img {
+        width: 60%;
+      }
+    }
+  }
+
+  /* Picture Section */
+  .picture-section {
+    .picture-section-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .picture-section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        h2 {
+          font-size: 30px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+      img {
+        width: 60%;
+      }
+    }
+  }
+
+  /* Why this is awesome */
+  .awesome {
+    &-container {
+      .awesome-title {
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      .awesome-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        .awesome-img-wraper {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h2 {
+            font-size: 25px;
+            text-align: center;
+          }
+          p {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Pricing Options */
+
+  .pricing {
+    &-title {
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    &-wraper {
+      width: 100%;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px;
+      .pricing-wrap{
+        width: 60%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  /* Customers */
+  .customer {
+    &-container {
+      .customer-wraper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        width: 100%;
+        .wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 30px;
+          width: 100%;
+          .customer-feedback {
+            width: 70%;
+            ::after{
+              left: 230px;
+            }
+          }
+          .customer-icon {
+            .name{    
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Contact Us */
+  .contact {
+    &-container {
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 43px;
+        width: 100%;
+        form {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        textarea {
+          min-width: 60%;
+          max-width: 80%;
+        }  
+      } 
+    }
+  }
+  /* Footer */
+  footer {
+    .footer-container {
+      .footer-social-icons{
+        width: 60%;
+        .facebook, .twitter, .google, .pint, .inst, .dub, .wifi {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+  /* Burger Button */
+  .d-none {
+    display: none;
+  }
+}
