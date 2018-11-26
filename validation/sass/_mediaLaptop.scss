@@ -11,7 +11,7 @@
   }
   /* Info Section */
   .info-section {
-    .info-section-container {
+    &-container {
       .info-text-items {
         width: 44%;
         p {
@@ -41,9 +41,9 @@
   }
   
   /* Why this is awesome */
-  .awesome {
+  .awesome, .pricing, .customer .design, .contact {
     &-container {
-      .awesome-title {
+      .awesome-title, .pricing-title, .customer-title, .design-title, .contact-title {
         h2 {
           margin-top: 50px;
         }
@@ -51,50 +51,4 @@
     }
   }
 
-  /* Pricing Options */
-  .pricing {
-    &-container {
-      .pricing-title {
-        h2 {
-          margin-top: 50px;
-        }
-      }
-    }
-  }
-
-  /* Customers */
-  .customer {
-    &-container {
-      .customer-title {
-        h2 { 
-          margin-top: 50px;
-        }
-      }
-    }
-  }
-
-  /* Stylish Design */
-
-  .design {
-    &-container{
-      .design-title {
-        h2 {
-          margin-top: 50px;
-        }
-      }
-    }
-  }
-
-  /* Contact Us */
-  .contact {
-    &-container {
-      .contact-title {
-        h2 {
-          margin-top: 50px;
-        }
-      }
-    }
-  }
-
-  
 }

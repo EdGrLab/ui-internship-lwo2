@@ -67,7 +67,7 @@
             <div class="title">
               <label>Try Your <span>FREE</span> Trial Today</label>
             </div>
-            <p id="tip">Please fill in data correctly!</p>
+            <p id="tip"></p>
             <div class="input_name">
               <input
                 required
@@ -130,13 +130,13 @@
             id="defaultTab"
             onclick="switchTab(event,'tab1')"
           >
-            <a href="">Tab 1</a>
+            <a href="javascript:void(0)">Tab 1</a>
           </button>
           <button class="btn-info" onclick="switchTab(event,'tab2')">
-            <a href="">Tab 2</a>
+            <a href="javascript:void(0)">Tab 2</a>
           </button>
           <button class="btn-info" onclick="switchTab(event,'tab3')">
-            <a href="">Tab 3</a>
+            <a href="javascript:void(0)">Tab 3</a>
           </button>
         </div>
         <div class="info-text-items" id="tab1">
@@ -440,8 +440,8 @@
               <input
                 type="text"
                 required
-                id="username2"
-                onblur="validate('username2', /^[a-zA-Z ]+$/)"
+                id="user_name"
+                onblur="validate('user_name', /^[a-zA-Z ]+$/)"
                 name="user_name"
                 placeholder="Name"
               />
@@ -459,8 +459,8 @@
             <div class="input_name">
               <input
                 type="text"
-                id="subj"
-                onblur="validate('subj', /^[a-zA-Z ]+$/)"
+                id="subject"
+                onblur="validate('subject', /^[a-zA-Z ]+$/)"
                 name="user_subj"
                 placeholder="Subject"
               />

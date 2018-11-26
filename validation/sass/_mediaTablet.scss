@@ -2,7 +2,6 @@
   /* Header */
 
   .top-bar {
-    .flex {
       .menu-btn {
         display: block;
         width: 50px;
@@ -26,7 +25,7 @@
         display: none;
       }
     }
-  }
+
   .burger-menu {
     background-color: rgba(0,0,0, 0.7);
     display: flex;
@@ -43,20 +42,20 @@
           flex-direction: column;
           flex-basis: 100%;
           justify-content: space-between;
-          li{
-            list-style-type: none;
-            padding: 10px 0;
-            text-align: center;
-            border-bottom: 1px solid $colorOrange;
-            a {
-              color: $colorWhite;
-              font-family: $fontOpenSans;
-              font-size: 16px;
-              text-decoration: none;
+            li {
+              list-style-type: none;
+              padding: 10px 0;
               text-align: center;
-              display: block;
+              border-bottom: 1px solid $colorOrange;
+              a {
+                color: $colorWhite;
+                font-family: $fontOpenSans;
+                font-size: 16px;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+              }
             }
-          }
           :last-child {
             border-bottom: none;
           }
@@ -95,7 +94,7 @@
           margin-bottom: 33px;
           text-align: center;
         }
-        .devider {
+        .divider {
           width: 65px;
           border: 1px solid #ffffff;
           margin-bottom: 36px;
@@ -108,24 +107,18 @@
       .title {
         display: none;
       }
-      .input_name, .input_mail, .input_psw {
-        display: none;
-      }
-      .input_psw {
-        display: none;
-      }
-      .btn-form {
+      .input_name, .input_mail, .input_psw, .btn-form {
         display: none;
       }
     }
   }
 
   .error {
-    border:2px solid red;
+    border: 2px solid red;
 }
 
 .success {
-  border:2px solid green;
+  border: 2px solid green;
 }
 
   /* Social */
@@ -266,10 +259,7 @@
   .awesome {
     &-container {
       .awesome-title {
-        h2 {
-          text-align: center;
-        }
-        p {
+        h2, p{
           text-align: center;
         }
       }

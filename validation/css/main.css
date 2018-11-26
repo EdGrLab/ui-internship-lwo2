@@ -160,10 +160,8 @@ a {
 .banner-text .input_name input, .banner-text .input_mail input, .banner-text .input_psw input {
   width: 285px;
   line-height: 2;
-  transition: 0.3s;
   font-size: 16px;
-  outline: none;
-  border: 1px solid rgba(0, 0, 1, 0.16);
+  outline: 1px solid rgba(0, 0, 1, 0.16);
 }
 
 form input {
@@ -171,11 +169,11 @@ form input {
 }
 
 .error {
-  border:2px solid #F72C00 !important;  
+  outline:2px solid #F72C00 !important;  
 }
 
 .success {
-border:2px solid #57CC13 !important;
+  outline:2px solid #57CC13 !important;
 }
 
 @keyframes fadeEffect {
