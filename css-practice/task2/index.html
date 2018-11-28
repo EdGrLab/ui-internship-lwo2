@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Exo:100,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/media.css">
   <title>Template</title>
 </head>
 
 <body>
-  <div class="bg-container">
+ 
     <section class="header-info">
       <header>
+          <video autoplay muted loop id="bg-video">
+              <source src="./videos/bg.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
         <h1>There is no other platforms for you as like </h1>
-        <img src="./img/play-icon.svg" alt="play">
+        <div class="video-player">
+            <i class="fas fa-pause-circle"></i>
+            <i class="fas fa-play-circle hide-el"></i>
+          </div>
         <button>try now</button>
         <span class="mark">* No need to add cards details</span>
       </header>
     </section>
-  </div>
+ 
   <section class="description">
     <article>
       <span class="red">NEW DESIGN</span>
@@ -125,11 +133,14 @@
   <section class="section-7">
     <span class="red">NEW FEATURES</span>
     <h2>Over 1000 designers are using ...</h2>
-    <form>
-      <input type="text" placeholder="FULL NAME">
-      <input type="text" placeholder="YOUR EMAIL">
-      <input type="text" placeholder="PASSWORD">
-      <button>TRY NOW</button>
+    <form action="lool.php" id="signup" method="POST">
+      <input type="text" name="name" placeholder="FULL NAME" required>
+      <span class="validate-msg"></span>
+      <input type="text" name="email" placeholder="YOUR EMAIL" required>
+      <span class="validate-msg"></span>
+      <input type="text" name="pass" placeholder="PASSWORD" required>
+      <span class="validate-msg"></span>
+      <button type="submit" id="submit-btn">TRY NOW</button>
     </form>
     <span class="sign">By Signing up you agree to our <a href="#">terms & Services.</a></span>
   </section>
@@ -164,6 +175,7 @@
       </div>
     </div>
   </section>
+  <script src="index.js"></script>
 </body>
 
 </html>

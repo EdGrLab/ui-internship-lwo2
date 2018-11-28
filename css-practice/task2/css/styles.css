@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
   font-family: "Exo", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  max-width: 1440px;
+  overflow-x: hidden; }
 
 h1 {
   font-size: 60px;
@@ -22,8 +24,30 @@ h3 {
   font-weight: 400;
   margin-bottom: 8px; }
 
-.bg-container {
-  background-image: url(../img/header-bg.png); }
+i {
+  color: #c8c8c8; }
+
+.valid {
+  outline: 2px solid #329932; }
+
+.invalid {
+  outline: 2px solid #ff6d6d; }
+
+.disable-submit {
+  opacity: 0.7;
+  cursor: not-allowed; }
+
+header video {
+  position: absolute;
+  top: 33.5%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.5;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
 
 .dots {
   color: #ff6d6d;
@@ -33,11 +57,25 @@ h3 {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  padding: 15.1% 0 15.5%; }
+  padding: 15.2% 0 15.5%; }
 
-.header-info img {
-  display: block;
-  margin: 40px auto; }
+.fa-play-circle, .fa-pause-circle {
+  color: #323969;
+  font-size: 60px;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 20px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.fa-play-circle:hover, .fa-pause-circle:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1); }
+
+.hide-el {
+  display: none; }
 
 button {
   letter-spacing: 2.4px;
@@ -46,15 +84,9 @@ button {
   background-color: #ff6d6d;
   border-radius: 3px;
   font-size: 16px;
+  cursor: pointer;
   font-weight: 100;
   padding: 16px 50px; }
-
-button:hover {
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
-  transition: 0.7s;
-  border: #ff6d6d;
-  background-color: red; }
 
 header {
   padding: 0 20%; }
@@ -74,8 +106,8 @@ header {
 
 .description article {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 150px 0 75px 0;
   width: 61%;
   text-align: left;
@@ -84,7 +116,7 @@ header {
 .description article p {
   font-weight: 500;
   font-size: 16px;
-  color: #777777;
+  color: grey;
   line-height: 26px;
   margin: 6.9% 0 0 0; }
 
@@ -98,11 +130,11 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 40%; }
 
 .section-3 {
@@ -127,8 +159,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 6.6%; }
 
 .features-container img {
@@ -224,11 +256,12 @@ header {
   text-align: center;
   width: 34%; }
 
-.founder i {
+.founder p {
   color: white;
   opacity: 0.66;
   font-size: 16px;
   font-weight: 400;
+  font-style: italic;
   line-height: 26px;
   padding: 0 23px;
   letter-spacing: 0.64px; }
@@ -246,8 +279,8 @@ header {
   padding: 0 21.5%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center; }
 
 .section-6 article {
@@ -299,12 +332,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; 
   width: 79.5%;
   margin: 0 auto;
- }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .section-7 form input,
 .section-7 form button {
@@ -405,7 +437,6 @@ input:focus::placeholder {
   color: #c8c8c8;
   background-color: #f6f6f6;
   border-radius: 3px;
-  /* border: 1px solid #4e4e5e; */
   height: 49px;
   width: 211px; }
 
