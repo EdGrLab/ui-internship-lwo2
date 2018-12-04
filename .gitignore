@@ -5,6 +5,7 @@
 *.sublime*
 
 # common ignores
+.package.json
 node_modules
 *.log
 *.log.*

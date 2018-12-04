@@ -54,7 +54,9 @@ header video {
   display: inline-block; }
 
 .header-info {
-  width: 80%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 15.2% 0 15.5%; }
@@ -135,7 +137,8 @@ header {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  width: 40%; }
+  width: 40%;
+  margin-top: 0; }
 
 .section-3 {
   padding: 9% 0 12.5% 0;

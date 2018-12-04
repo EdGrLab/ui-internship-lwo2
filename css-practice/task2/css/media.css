@@ -6,11 +6,18 @@
   .section-4, .founder-container, .section-8 .info, form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column; }
   .info > * {
     width: 100%; }
   
+=======
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .info > * {
+    width: 100%; }
+>>>>>>> interactive-task-2
   header {
     padding: 0; }
   .sign {
@@ -25,18 +32,31 @@
   .features-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+=======
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+>>>>>>> interactive-task-2
   .feature {
     width: 80%;
     margin: 2%; }
   .bg {
     -webkit-box-pack: center;
+<<<<<<< HEAD
         -ms-flex-pack: center;
             justify-content: center;
+=======
+    -ms-flex-pack: center;
+    justify-content: center;
+>>>>>>> interactive-task-2
     width: 100%; }
   .section-3 {
     width: 80%; }
@@ -62,10 +82,17 @@
     widows: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     -ms-flex-line-pack: center;
         align-content: center;
+=======
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -ms-flex-line-pack: center;
+    align-content: center;
+>>>>>>> interactive-task-2
     text-align: center; }
   .founder {
     padding-top: 5%;
@@ -80,8 +107,13 @@
   .section-7 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column; }
+=======
+    -ms-flex-direction: column;
+    flex-direction: column; }
+>>>>>>> interactive-task-2
   .section-7 form input,
   .section-7 form button {
     width: 60%;
@@ -92,7 +124,11 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-line-pack: center;
+<<<<<<< HEAD
         align-content: center;
+=======
+    align-content: center;
+>>>>>>> interactive-task-2
     padding: 2% 10%;
     margin: 0 auto;
     width: 100%; }
@@ -100,8 +136,13 @@
     width: 100%; }
   .email-container {
     -webkit-box-pack: center;
+<<<<<<< HEAD
         -ms-flex-pack: center;
             justify-content: center; }
+=======
+    -ms-flex-pack: center;
+    justify-content: center; }
+>>>>>>> interactive-task-2
   .section-2 article {
     width: 100%;
     text-align: center;
@@ -118,4 +159,8 @@
     padding: 0 15%; }
   .section-6 article {
     padding: 50px 0 0 0;
+<<<<<<< HEAD
     margin-bottom: 50px; } }
+=======
+    margin-bottom: 50px; } }
+>>>>>>> interactive-task-2
