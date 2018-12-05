@@ -2,12 +2,16 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 .flx {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.hide-pic {
+  display: none; }
 
 h1 {
   font-size: 150px;
@@ -57,8 +61,16 @@ h5 {
   border-bottom: 2px solid #f38181; }
 
 .welcome-container {
-  max-width: 1200px;
+  width: 100%;
   margin: auto; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #df8b82;
+  padding: 0 5%; }
 
 .bg-img {
   position: relative;
@@ -88,7 +100,7 @@ h5 {
 
 .navbar .logo {
   font-size: 30px;
-  padding: 10px 0 0 0;
+  padding: 15px 0 0 0;
   margin: 10px 0;
   text-transform: capitalize; }
 
@@ -120,13 +132,14 @@ ul {
   justify-content: center;
   -ms-flex-preferred-size: 60%;
   flex-basis: 60%;
-  margin: 7.5% 0;
-  padding: 10px 0;
+  padding: 80px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
   text-align: center; }
+  .intro h2 {
+    padding-top: 30px; }
 
 .learn-more {
   font-size: 14px;
@@ -354,6 +367,12 @@ ul {
   -o-transition: 0.4s;
   transition: 0.4s; }
 
+.accordion-tab .panel {
+  display: none; }
+
+.accordion-tab .active-tab .panel {
+  display: block; }
+
 .active,
 .accordion:hover {
   background-color: #ccc; }
@@ -384,8 +403,11 @@ ul {
   transition: max-height 0.3s ease-out; }
 
 .slide-container {
+  display: flex;
+  justify-content: center;
   margin-top: 8%;
   margin-bottom: 1%;
+  position: relative;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;
@@ -395,8 +417,19 @@ ul {
   align-items: center;
   background-color: #f8f8f8;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -ms-flex-pack: justify; }
+
+.slider-container {
+  width: 80%;
+  overflow: hidden; }
+
+.slide-box {
+  width: 300%;
+  display: flex; }
+
+.slide-block {
+  width: 100%;
+  transition: transform 0.5s; }
 
 .sc-2 {
   margin: 0;
@@ -406,14 +439,21 @@ ul {
 
 .arrow-left,
 .arrow-right {
-  -ms-flex-preferred-size: 18%;
-  flex-basis: 18%;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center; }
+  cursor: pointer;
+  padding: 0 30px;
+  transition: 0.3s;
+  font-size: 30px;
+  width: auto; }
+
+.arrow-left:hover, .arrow-right:hover {
+  transform: scale(1.2); }
+
+.arrow-right {
+  right: 0; }
 
 .msg-box {
-  -ms-flex-preferred-size: 15%;
+  float: left;
+  padding: 50px 100px;
   flex-basis: 15%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -421,6 +461,9 @@ ul {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center; }
+  .msg-box img {
+    width: 150px;
+    height: auto; }
 
 .josh {
   margin-right: 50px; }
@@ -438,7 +481,7 @@ ul {
   line-height: 36px;
   font-family: "Roboto"; }
   .description i {
-    padding-top: 75px; }
+    padding: 75px 20px 0 10px; }
 
 .description h4 {
   padding: 12px 80px; }
@@ -517,7 +560,8 @@ ul {
   -ms-grid-rows: 50% 50%;
   grid-template-rows: 50% 50%; }
   .grid-container img {
-    max-width: 100%; }
+    max-width: 100%;
+    cursor: pointer; }
 
 .big-pic {
   -ms-grid-row: 1;
@@ -525,6 +569,49 @@ ul {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-area: 1/3 / span 2 / span 1; }
+
+.mySlides {
+  display: none;
+  margin: auto;
+  width: 50%; }
+  .mySlides img {
+    width: 100%;
+    height: auto;
+    margin: auto; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.8); }
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px; }
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer; }
 
 .review-container {
   margin-top: 6%;
@@ -866,6 +953,8 @@ input::placeholder {
     -webkit-box-direction: normal;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap; }
+  .slide-container {
+    font-size: 14px; }
   .about-img-block img {
     margin: 40px auto;
     width: 80%; }
