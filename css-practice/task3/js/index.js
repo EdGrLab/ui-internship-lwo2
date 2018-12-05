@@ -1,34 +1,40 @@
 
 /* eslint-env browser */
 /* eslint no-unused-vars: */
-const sliders = [...document.querySelectorAll('.slide-container')];
-sliders.forEach((el) => {
-  moveSlide(el);
-});
+// slider
 
-function moveSlide(slider) {
-  const slidesArr = [...slider.querySelectorAll('.slide-block')];
-  const arrowLeft = slider.querySelector('.arrow-left');
-  const arrowRight = slider.querySelector('.arrow-right');
-  arrowLeft.addEventListener('click', showSlide, false);
-  arrowRight.addEventListener('click', showSlide, false);
+(function slider() {
+  const prev = [...document.querySelectorAll('.arrow-left')];
+  const next = [...document.querySelectorAll('.arrow-right')];
+  const slide = [...document.querySelectorAll('.slide-block')];
+  let offset = 0;
 
-
-  function showSlide(e) {
-    const curr = e.target;
-
-    if (curr == arrowLeft) {
-      slidesArr[0].style.display = 'none';
-      slidesArr[1].style.display = 'block';
-    }
-
-    if (curr == arrowRight) {
-      slidesArr[1].style.display = 'none';
-      slidesArr[0].style.display = 'block';
+  function move() {
+    for (let i = 0; i < slide.length; i++) {
+      slide[i].style['transform'] = 'translate3d(' + offset + ', 0, 0)';
     }
   }
-}
 
+  for (let i = 0; i < next.length; i++) {
+    next[i].addEventListener('click', function() {
+      if (parseInt(offset) <= -2300) {
+        offset = 1150;
+      }
+      offset = (parseInt(offset) - 1150) + 'px';
+      move();
+    }, false);
+
+    prev[i].addEventListener('click', function() {
+      if (parseInt(offset) >= 0) {
+        offset = -3450;
+      }
+      offset = (parseInt(offset) + 1150) + 'px';
+      move();
+    }, false);
+  }
+}());
+
+// modal
 function openModal() {
   document.getElementById('myModal').style.display = 'block';
 }
@@ -55,9 +61,22 @@ function showSlides(n) {
 }
 
 
+// accordion
 function initAccordion(accordionElem) {
+  let allPanelElems = [...accordionElem.querySelectorAll('.accordion-item')];
+  const arrayImg = [...document.querySelectorAll('.guy-with-pic img')];
   function handlePanelClick(event) {
     showPanel(event.currentTarget);
+  }
+
+  function showImg(tabIndex) {
+    arrayImg.forEach((el, i) => {
+      if (i != tabIndex) {
+        el.classList.add('hide-pic');
+      } else {
+        el.classList.remove('hide-pic');
+      }
+    });
   }
 
   function showPanel(panel) {
@@ -66,9 +85,9 @@ function initAccordion(accordionElem) {
       expandedPanel.classList.remove('active-tab');
     }
     panel.classList.add('active-tab');
+    showImg(panel.getAttribute('data-index'));
   }
 
-  let allPanelElems = accordionElem.querySelectorAll('.accordion-item');
   for (let i = 0, len = allPanelElems.length; i < len; i++) {
     allPanelElems[i].addEventListener('click', handlePanelClick);
   }

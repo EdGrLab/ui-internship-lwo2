@@ -15,6 +15,10 @@ $dark-color: #333333;
   display: flex;
 }
 
+.hide-pic {
+  display: none;
+}
+
 h1 {
   font-size: 150px;
   line-height: 140px;
@@ -510,6 +514,8 @@ ul {
 }
 
 .slide-container {
+  display: flex;
+  justify-content: center;
   margin-top: 8%;
   margin-bottom: 1%;
   position: relative;
@@ -523,23 +529,25 @@ ul {
   background-color: #f8f8f8;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
 }
+
+.slider-container{
+  width: 80%;
+  overflow: hidden;
+}
+.slide-box {
+  width: 300%;
+  display: flex;
+}
+
+
+
 
 .slide-block{
-  animation: wow 0.5s;
+  width: 100%;
+  transition: transform 0.5s;
 }
 
-@keyframes wow {
-  from {
-    opacity: 0.5;
-    // transform: translate(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(100%);
-  }
-}
 
 .sc-2 {
   margin: 0;
@@ -551,8 +559,6 @@ ul {
 .arrow-left,
 .arrow-right {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   padding: 0 30px;
   transition: 0.3s;
   font-size: 30px;
@@ -1171,6 +1177,10 @@ input::placeholder {
     flex-flow: column wrap;
   }
 
+  .slide-container {
+    font-size: 14px;
+  }
+
   .about-img-block img {
     margin: 40px auto;
     width: 80%;
@@ -1213,6 +1223,7 @@ input::placeholder {
   .partners {
     display: none;
   }
+
 
   .reviews > * {
     width: 100%;
