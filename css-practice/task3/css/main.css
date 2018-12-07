@@ -105,7 +105,7 @@ nav {
   text-transform: capitalize; }
 
 li a {
-  padding: 25px 19px;
+  padding: 20px 19px;
   margin: 10px 5px; }
 
 .navbar li a:hover {
@@ -689,10 +689,11 @@ ul {
 .post-day {
   background: #95e1d3;
   position: absolute;
-  bottom: 160px;
+  bottom: 170px;
   left: 5px;
   color: #ffffff;
   padding: 0px 10px;
+  line-height: 1.5;
   font-family: "Roboto";
   text-align: center; }
   .post-day span:first-child {
@@ -825,6 +826,9 @@ input::placeholder {
 
 .blog-pic {
   margin-top: 35px; }
+  .blog-pic img {
+    width: 200px;
+    height: 150px; }
 
 .blog-text {
   padding-top: 53px;

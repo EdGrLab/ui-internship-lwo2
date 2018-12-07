@@ -22,7 +22,7 @@
       }
       offset = (parseInt(offset) - 1150) + 'px';
       move();
-    }, false);
+    });
 
     prev[i].addEventListener('click', function() {
       if (parseInt(offset) >= 0) {
@@ -30,7 +30,7 @@
       }
       offset = (parseInt(offset) + 1150) + 'px';
       move();
-    }, false);
+    });
   }
 }());
 
