@@ -677,6 +677,9 @@ ul {
   padding: 0px 10px 0px 10px;
   line-height: 1.7;
   width: 33%; }
+  .post-item img[alt="post"] {
+    width: 100%;
+    height: 255px; }
   .post-item h5 {
     padding-top: 3px; }
   .post-item p {

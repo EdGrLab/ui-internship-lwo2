@@ -1,12 +1,13 @@
 /* global fetch, document */
 
-const blogSection = document.querySelector('.blog-section');
+const footerBlogs = document.querySelector('.blog-section');
+
 
 function RenderBlogItem(model) {
   function dateParser(dateString) {
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     return {
-      day: new Date(dateString).getDay() +1,
+      day: new Date(dateString).getDay() + 1,
       month: months[new Date(dateString).getMonth() + 1],
       year: new Date(dateString).getFullYear(),
     };
@@ -39,16 +40,10 @@ fetch('http://localhost:3000/api/blogs')
 function renderer(res) {
   const latestById = res.latest;
 
-  const latestBlogs = res.blogs.filter((el) => latestById.includes(el.id));
   const footer = res.blogs.filter((el) => !latestById.includes(el.id));
-
-  latestBlogs.forEach((model) => {
-    const blogView = new RenderBlogItem(model);
-    blogSection.appendChild(blogView);
-  });
 
   footer.forEach((model) => {
     const blogView = new RenderBlogItem(model);
-    blogSection.appendChild(blogView);
+    footerBlogs.appendChild(blogView);
   });
 }

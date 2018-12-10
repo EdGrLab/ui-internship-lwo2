@@ -834,11 +834,16 @@ ul {
   justify-content: space-between;
 }
 
+
 .post-item {
   position: relative;
   padding: 0px 10px 0px 10px;
   line-height: 1.7;
   width: 33%;
+  img[alt="post"]{
+    width: 100%;
+    height: 255px;
+  }
   h5 {
     padding-top: 3px;
   }
