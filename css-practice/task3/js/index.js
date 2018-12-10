@@ -22,7 +22,7 @@
       }
       offset = (parseInt(offset) - 1150) + 'px';
       move();
-    }, false);
+    });
 
     prev[i].addEventListener('click', function() {
       if (parseInt(offset) >= 0) {
@@ -30,7 +30,7 @@
       }
       offset = (parseInt(offset) + 1150) + 'px';
       move();
-    }, false);
+    });
   }
 }());
 
@@ -72,9 +72,9 @@ function initAccordion(accordionElem) {
   function showImg(tabIndex) {
     arrayImg.forEach((el, i) => {
       if (i != tabIndex) {
-        el.classList.add('hide-pic');
+        el.style.display = 'none';
       } else {
-        el.classList.remove('hide-pic');
+        el.style.display = 'block';
       }
     });
   }
