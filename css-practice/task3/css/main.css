@@ -596,8 +596,12 @@ ul {
   position: relative;
   margin: auto;
   padding: 0;
-  width: 90%;
-  max-width: 1200px; }
+  max-width: 1200px;
+  overflow: hidden; }
+  .modal-content .mySlides:nth-child(5) {
+    margin-top: -200px;
+    padding: 8%;
+    height: 100vh; }
 
 .close {
   color: white;
