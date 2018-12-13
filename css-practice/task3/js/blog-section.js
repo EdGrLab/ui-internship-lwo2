@@ -1,6 +1,4 @@
 /* global fetch, document */
-const latestBlogs = document.querySelector('.stories-container');
-
 function RenderStoriesItem(model) {
   function dateParser(dateString) {
     const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -44,6 +42,7 @@ function renderer(res) {
 
   latest.forEach((model) => {
     const blogView = new RenderStoriesItem(model);
+    const latestBlogs = document.querySelector('.stories-container');
     latestBlogs.appendChild(blogView);
   });
 }
