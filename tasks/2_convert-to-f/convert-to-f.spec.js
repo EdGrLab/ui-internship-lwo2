@@ -1,7 +1,7 @@
-// import { convertToF } from './convert-to-f';
+import { convertToF } from './convert-to-f';
 
 
-xdescribe('convert-to-f', () => {
+describe('convert-to-f', () => {
     test('should return number', () => {
         expect(typeof convertToF(0)).toBe('number');
     });

@@ -1,8 +1,8 @@
-// import { Person } from './make-a-person';
+import { Person } from './make-a-person';
 
-// const bob = new Person('Bob Ross');
+const bob = new Person('Bob Ross');
 
-xdescribe('Make a person', () => {
+describe('Make a person', () => {
 
     test('Object.keys(bob).length should return 6', () => {
         expect(Object.keys(bob).length).toBe(6);

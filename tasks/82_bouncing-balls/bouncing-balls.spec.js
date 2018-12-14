@@ -1,6 +1,6 @@
-// import { bouncingBall } from './bouncing-balls';
+import { bouncingBall } from './bouncing-balls';
 
-xdescribe('Bouncing ball', () => {
+describe('Bouncing ball', () => {
     test("bouncingBall(3.0, 0.66, 1.5) should return 3", () => {
         expect(bouncingBall(3.0, 0.66, 1.5)).toBe(3);
     });

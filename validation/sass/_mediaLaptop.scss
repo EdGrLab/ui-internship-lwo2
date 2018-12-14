@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1024px) {
+  /* Header */
+  .top-bar {
+    .flex {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .menu {
+        width: 60%;
+      }
+    }
+  }
+  /* Info Section */
+  .info-section {
+    &-container {
+      .info-text-items {
+        width: 44%;
+        p {
+          margin-bottom: 13px;
+        }
+        h2 {
+          color: #000000;
+          margin-bottom: 21px;
+        }
+      }
+    }
+  }
+
+  /* Sub List Section */
+  .sub-list-section {
+    .sub-list-container {
+      display: flex;  
+      justify-content: space-between;
+      align-items: flex-start;
+      .sub-list-section-text {
+        width: 50%;
+        }
+      }
+    img {
+        box-shadow: 0px 35px 115px 12px rgba(204,204,204,0.84);
+    }
+  }
+  
+  /* Why this is awesome */
+  .awesome, .pricing, .customer .design, .contact {
+    &-container {
+      .awesome-title, .pricing-title, .customer-title, .design-title, .contact-title {
+        h2 {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+}

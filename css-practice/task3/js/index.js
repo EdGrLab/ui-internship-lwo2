@@ -72,9 +72,9 @@ function initAccordion(accordionElem) {
   function showImg(tabIndex) {
     arrayImg.forEach((el, i) => {
       if (i != tabIndex) {
-        el.classList.add('hide-pic');
+        el.style.display = 'none';
       } else {
-        el.classList.remove('hide-pic');
+        el.style.display = 'block';
       }
     });
   }

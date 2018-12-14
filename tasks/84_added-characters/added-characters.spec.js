@@ -1,6 +1,6 @@
-// import { addedChar } from './added_characters';
+import { addedChar } from './added_characters';
 
-xdescribe('Three added characters', () => {
+describe('Three added characters', () => {
     test("addedChar('aabbcc', 'aacccbbcc') should return ‘c’", () => {
         expect(addedChar('aabbcc', 'aacccbbcc')).toBe('c');
     });

@@ -1,11 +1,11 @@
-// import { reverseString } from './reverse-string';
+import { reverseString } from './reverse-string';
 
-xdescribe('reverse-string', () => {
+describe('reverse-string', () => {
     test('reverseString("hello") should return a string.', () => {
         expect(typeof reverseString('hello')).toBe('string');
     });
 
-    test('everseString("hello") should become "olleh".', () => {
+    test('reverseString("hello") should become "olleh".', () => {
         expect(reverseString('hello')).toBe('olleh');
     });
 

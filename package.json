@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Goal of the project is to provide the platform to write algorithms, tests and get markup knowledge",
   "scripts": {
-    "watch:sass": "node-sass -w css-practice/task3/scss/ -o css-practice/task3/css/",
-    "compile:sass": "node-sass css-practice/task3/scss/ -o css-practice/task3/css/"
+
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint tasks/**/*.js",
+    "tdd": "jest --watch",
+    "watch:sass": "node-sass -w css-practice/task2/scss/ -o css-practice/task2/css/",
+    "compile:sass": "node-sass css-practice/task2/scss -o css-practice/task2/css/"
+
   },
   "husky": {
     "hooks": {

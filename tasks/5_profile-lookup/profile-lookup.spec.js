@@ -1,6 +1,6 @@
-// import { lookupProfile } from './profile-lookup';
+import { lookupProfile } from './lookupProfile';
 
-xdescribe('profile-lookup', () => {
+describe('profile-lookup', () => {
     test('should return: "Vos" for arguments: "Kristian", "lastName" ', () => {
         expect(lookupProfile('Kristian', 'lastName')).toBe('Vos');
     });
