@@ -26,7 +26,7 @@ function dateParser(dateString) {
   };
 }
 
-function renderBlog(blog) {
+function prepareBlogModel(blog) {
   const {previewImg, published, title, description, watched, comments} = blog;
   const date = dateParser(published);
   return {
@@ -41,7 +41,7 @@ function renderBlog(blog) {
 }
 
 function renderLatestItem(model) {
-  const blog = renderBlog(model);
+  const blog = prepareBlogModel(model);
   const {previewImg, title, description, watched, comments} = blog;
   const {day, month} = blog.date;
 
@@ -64,7 +64,7 @@ function renderLatestItem(model) {
 }
 
 function renderFooterItem(model) {
-  const blog = renderBlog(model);
+  const blog = prepareBlogModel(model);
   const {previewImg, title} = blog;
   const {day, month, year} = blog.date;
   const element = document.createElement('div');
