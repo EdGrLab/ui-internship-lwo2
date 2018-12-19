@@ -1,3 +1,4 @@
+@import 'imports/fonts';
 @import 'imports/variables';
 @import 'imports/grid';
 
@@ -5,6 +6,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.flx {
+  display: flex;
 }
 
 header {
