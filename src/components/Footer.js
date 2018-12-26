@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Footer extends React.Component {
-  render() {
+function Footer() {
      return (
         <div>
           <footer className="flx jc-center">
@@ -11,6 +10,5 @@ class Footer extends React.Component {
         </div>
      );
   }
-}
 
 export default Footer;
